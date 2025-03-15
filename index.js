@@ -49,8 +49,8 @@ const scheduleDailyAnalyticsUpdate = () => {
 
 
 // Create a WebSocket server
-const wss = new WebSocket.Server({ port: 3000 }, async () => {
-    console.log('Server started on port 3000');
+const wss = new WebSocket.Server({ port: 3000+100 }, async () => {
+    console.log(`Server started on port ${3000+100}`);
     matchMakerWorker();
 });
 

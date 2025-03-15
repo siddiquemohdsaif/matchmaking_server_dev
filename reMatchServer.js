@@ -3,7 +3,7 @@ const GameMaker = require('./Utils/GameMaker');
 const { initializeGameInGameServer } = require('./Utils/GameInitiator');
 const FirestoreManager = require('./Firestore/FirestoreManager');
 const firestoreManager = FirestoreManager.getInstance();
-const wss = new WebSocket.Server({ port: 3001 });
+const wss = new WebSocket.Server({ port: 3001+100 });
 
 const reMatchPlayers = {};
 
